@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/85e1dcc875.js" crossorigin="anonymous"></script>
+        <title>CONTACTOS</title>
+    </head>
+    <body>
+        <header>
+            <!--LOGO + TITULO-->
+            <div class="logo">
+                <img src="imagenes/myn_inicio.jpg" alt="Logo Musculacion y Nutricion" class="logo__Img">
+                <h1 class="logo__Frase">¡ESTAMOS PARA AYUDARTE!</h1>
+            </div>
+            <!--FIN LOGO + TITULO-->
+            <!--SECCIONES BARRA NAV-->
+            <div class="seccionesTitulo">
+                <p>Secciones</p>
+            </div>
+            <div class="barraNav">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="1.dietas.html">Dietas</a></li>
+                        <li><a href="2.rutinas.html">Rutinas</a></li>
+                        <li><a href="3.suplementacion.html">Suplementación</a></li>
+                        <li><a href="4.contactos.html">Contactos</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="#formulario">Ir al formulariode sugerencias</a><br>
+            <hr>
+            <!--FIN SECCIONES BARRA NAV-->
+        </header>
+        <main>
+            <h4>En el siguiente formulario podra dejarnos un comentario, sugerencia o idea para mejorar la pagina web. Muchas Gracias!!</h4>
+            <form id="formulario" action="enviar.php" method="POST" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Envia tu Sugerencia</legend>
+                    <i class="fas fa-users"></i>
+                    <label for="nombreyapellido">Nombre y Apellido</label><br>
+                    <input type="text" name="nombreyapellido" maxlength="100" placeholder="Ej: Juan Perez"><br>
+                    <i class="fas fa-lock"></i>
+                    <label for="password">Contraseña</label><br>
+                    <input type="password" name="password" placeholder="Ingrese su Contraseña" maxlength="8"><br>
+                    <i class="fas fa-comment-alt"></i>
+                    <label for="textarea">Sugerencia</label><br>
+                    <textarea placeholder="Escriba su sugerencia aqui"></textarea><br>
+                </fieldset>
+            </form>
+        </main>
+        <!--PIE DE PAG-->
+        <footer class="pie.pagina">
+            <div class="seccionesTitulo">
+                <p>Medios de Contacto</p>
+            </div>
+            <div class="links">
+                <a href="">Email</a>
+                <a href="https://www.wa.link/5tb9dw">WhatsApp</a>
+                <a href="https://www.instagram.com/musculacionoknutricionok/?hl=es-la">Instagram</a>
+                <a href="4.contactos.html">Contactos</a>
+            </div>
+        </footer>
+        <!-- FIN PIE DE PAG-->
+    </body>
+</html>

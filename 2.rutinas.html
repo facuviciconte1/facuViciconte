@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RUTINAS</title>
+    </head>
+    <body>
+        <header>
+            <!--LOGO + TITULO-->
+            <div class="logo">
+                <img src="imagenes/myn_inicio.jpg" alt="Logo Musculacion y Nutricion" class="logo__Img">
+                <h1 class="logo__Frase">¡CUMPLE TUS OBJETIVOS!</h1>
+            </div>
+            <!--FIN LOGO + TITULO-->
+            <!--SECCIONES BARRA NAV-->
+            <div class="seccionesTitulo">
+                <p>Secciones</p>
+            </div>
+            <div class="barraNav">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="1.dietas.html">Dietas</a></li>
+                        <li><a href="2.rutinas.html">Rutinas</a></li>
+                        <li><a href="3.suplementacion.html">Suplementación</a></li>
+                        <li><a href="4.contactos.html">Contactos</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <hr>
+            <!--FIN SECCIONES BARRA NAV-->
+        </header>
+        <main>
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/zy_bmifoA7s?start=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+            <form id="formulario" action="enviar.php" method="POST" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>OBJETIVOS</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <h3>Sexo</h3>
+                            </td>
+                        </tr>
+                    </table>
+                    <label>Masculino</label>
+                    <input type="radio" name="sexo" value="masculino"><br>
+                    <label>Femenino</label>
+                    <input type="radio" name="sexo" value="femenino"><br>
+                    <label>Otro</label>
+                    <input type="radio" name="sexo" value="otro"><br>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <h3>Objetivo</h3>
+                            </td>
+                        </tr>
+                    </table>
+                    <label>Bajar de Peso</label>
+                    <input type="checkbox" name="bajar_peso" value="1"><br>
+                    <label>Aumento de Masa Muscular</label>
+                    <input type="checkbox" name="aumentar_peso" value="1"><br>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <h3>Seleccione un Musculo</h3>
+                            </td>
+                        </tr>
+                    </table>
+                    <select name="grupo_muscular">
+                        <option value="tren_sup">Pectorales</option>
+                        <option value="tren_inf">Espalda</option>
+                        <option value="tren_sup">Biceps</option>
+                        <option value="tren_inf">Triceps</option>
+                        <option value="tren_sup">Femorales</option>
+                        <option value="tren_inf">Cuadriceps</option>
+                        <option value="tren_inf">Gluteos</option>
+                        <option value="tren_sup">Pantorrillas</option>
+                    </select>
+                    <br>
+                    <input type="submit" name="submint" value="Enviar">
+                    <input type="reset" name="reset" value="Limpiar">
+                </fieldset>
+            </form>
+        </main>
+        <!--PIE DE PAG-->
+        <footer class="pie.pagina">
+            <div class="seccionesTitulo">
+                <p>Medios de Contacto</p>
+            </div>
+            <div class="links">
+                <a href="">Email</a>
+                <a href="https://www.wa.link/5tb9dw">WhatsApp</a>
+                <a href="https://www.instagram.com/musculacionoknutricionok/?hl=es-la">Instagram</a>
+                <a href="4.contactos.html">Contactos</a>
+            </div>
+        </footer>
+        <!-- FIN PIE DE PAG-->
+    </body>
+</html>

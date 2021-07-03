@@ -1,0 +1,188 @@
+* {
+    padding: 0%;
+}
+/*Color aplicado a todo el cuerpo en todas las secciones*/
+body {
+    background-image: linear-gradient(rgb(14, 134, 128), rgb(105, 105, 207));
+}
+/*Estilo de Logo y Frase para todas las secciones*/
+.logo {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px black;
+}
+
+.logo__Frase {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    font-weight: bolder;
+}
+
+/*Aplicado al encabezado secciones*/
+.seccionesTitulo {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.seccionesTitulo p {
+    font-size: 20px;
+    font-family: "Comic Sans MS", sans-serif;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px black;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px black;
+    transition-property: background-color, color, left;
+    transition-duration: 2s;
+    background-color: rgb(104, 134, 179);
+}
+
+/*Estilo Barra navegacion*/
+.barraNav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+nav ul li {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px black;
+    transition-property: background-color, color, left;
+    transition-duration: 2s;
+    background-color: rgb(104, 134, 179);
+}
+
+nav ul li:hover {
+    transform: translate(5px, 10px);
+}
+/*FIN BARRA NAV*/
+
+h1 {
+    color: black;
+    font-style: italic;
+}
+
+h3 {
+   
+    font-style: italic;
+    text-align: center;
+}
+
+
+.nosotros {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+.pie_pagina {
+    background-image: url(https://bachibacmontaigne.files.wordpress.com/2018/07/banner-contactos-e1530538515291.png?w=1200);
+    background-position: inherit;
+    background-size: 700px;
+}
+
+.links {
+    display: inline-block;
+    background-image: linear-gradient(rgb(14, 134, 128), rgb(105, 105, 207));
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.tabla__dietas {
+    background-color: rgb(4, 129, 138);
+}
+
+.IntroTitulo {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+.IntroImg {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.IntroImg__Img:hover {
+    transform: rotateX(-15deg) rotateY(30deg);
+}
+
+.IntroImg__Img {
+    width: 400px;
+    height: auto;
+}
+
+.IntroTexto {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+.IntroTexto__Texto {
+    font-family: "Comic Sans MS", sans-serif;
+    text-align: justify;
+    font-weight: bolder;
+    line-height: 20px;
+    margin-inline: 75px;
+}
+
+/*GRILLA SECCION SUPLEMENTACION - GRIDS*/
+#grilla {
+    display: grid;
+    grid-template-areas:
+        "nav header header"
+        "nav footer footer"
+        "nav footer footer"
+        "nav footer footer";
+    grid-template-rows: 55px 100px 100px 75px;
+    grid-template-columns: 20% auto 5%;
+    flex-direction: row;
+}
+.border {
+    border: 1px solid black;
+}
+
+header {
+    grid-area: header;
+}
+footer {
+    grid-area: footer;
+}
+footer ul {
+    margin-inline: 30px;
+}
+
+nav {
+    grid-area: nav;
+}
+
+/*Classe para imagenes de Grilla en seccion suplemetación*/
+.border__Imgsup {
+    width: 263px;
+    height: 328px;
+}
